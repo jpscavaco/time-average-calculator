@@ -1,0 +1,134 @@
+body {  
+  font-family: Arial;
+  background-color: hsl(96, 42%, 61%);
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+p {
+  margin: 0px;
+}
+
+input {
+  transition: background-color 0.15s;  
+}
+
+input:hover {
+  background-color: hsl(0, 0%, 94%);   
+}
+
+input:focus {
+  background-color: hsl(0, 0%, 94%);   
+}
+
+button {
+  border: none;
+  border-radius: 0;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.app-container {  
+  width: 304px;   
+}
+
+.app-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.input-grid-container {
+  border: 2px solid black;  
+  border-bottom-width: 0;
+}
+
+.input-grid {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  border: 0 solid black;
+  border-bottom-width: 2px;
+}
+
+.date-input {
+  font-size: 12px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border: 0 solid black;
+  border-right-width: 1px;
+}
+
+.time-input {  
+  border: none;
+  text-align: center;
+  font-size: 14px;  
+}
+
+.time-input[type='number']::-webkit-inner-spin-button, 
+.time-input[type='number']::-webkit-outer-spin-button { 
+  -webkit-appearance: none;  
+}
+
+.delete-button {
+  width: 100px;  
+  background-color: hsl(0, 0%, 80%);  
+  border: 0 solid black;
+  border-left-width: 1px;
+  font-size: 14px;
+  transition: background-color 0.15s;  
+}
+
+.delete-button:hover {
+  color: white;
+  background-color: hsl(0, 66%, 50%);  
+}
+ 
+.delete-button:active {
+  background-color: hsl(0, 66%, 60%);
+}
+
+.confirm-button {
+  width: 100%;
+  color: white;  
+  background-color: hsl(160, 100%, 32%);
+  border: 0 solid black;
+  border-left-width: 1px;
+  font-size: 14px;
+  transition: background-color 0.15s;    
+}
+
+.confirm-button:hover {
+  background-color: hsl(160, 100%, 36%);
+}
+ 
+.confirm-button:active {
+  background-color: hsl(160, 100%, 31%);
+}
+
+.add-new-item {  
+  width: 102px;
+  color: white;
+  background-color: hsl(0, 0%, 0%);
+  transition: background-color 0.15s;
+  font-size: 14px;
+}
+
+.add-new-item:hover {
+  background-color: hsl(225, 73%, 57%);
+}
+
+.add-new-item:active {
+  background-color: hsl(225, 73%, 62%);
+}
+
+.text-result {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;  
+}
